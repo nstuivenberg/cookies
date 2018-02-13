@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies en voorbeelden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="pageLoad()">
+<div class="top">
+    <div class="topleft"></div>
+    <div class="topcenter">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="watte.html"><li>Wat is een cookie?</li></a>
+            <a href="cookieToevoegen.html"><li>Cookie toevoegen</li></a>
+            <a href="cookieAanpassen.html"><li>Cookie aanpassen</li></a>
+            <a href="cookieVerwijderen.html"><li>Cookie verwijderen</li></a>
+            <a href="cookieTeller.html"><li>Cookie Teller</li></a>
+        </ul>
+    </div>
+    <div class="topright">
+        <img src="https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1503483467">
+    </div>
+</div>
+
+<div class="main">
+    <h1>Cookie aanpassen</h1>
+    <p>Cookies werken op zo'n manier dat ze alleen aangemaakt kunnen worden. Dat houdt automatisch in dat als je een
+    cookie wilt aanpassen, dan zul je deze dus moeten overschrijven. Je overschrijft de cookie door een nieuwe cookie
+    aan te maken met precies dezelfde cookie naam.</p>
+    <p>Je hebt op de cookie toevoegen pagina geleerd hoe je een cookie kunt aanmaken. Zou je de waarde van een eerder
+    aangemaakte cookie willen aanpassen, dan zul je die weer <span class="cursive">opnieuw</span> moeten aanmaken.</p>
+
+    <p>Hieronder zijn twee knoppen die allebei een functie aanroepen, die de waarde de cookie van cAanpassen:</p>
+
+    <button onclick="cookieAanpassenVoorbeeldUno()">"Super aanpasbaar"</button>
+    <button onclick="cookieAanpassenVoorbeeldDuo()">"I feel changed"</button>
+
+    <p>De oplettende kijker zal gezien hebben dat bij je eerste bezoek, de cookie cAanpassen nog geen waarde had. Dit
+        is dus geen probleem, want de code voor het aanmaken en het aanpassen van de cookie is precies hetzelfde.</p>
+
+
+    <button id="cookieAanpassenButton" onclick="showUitlegAanpassen()">Laat mij de code zien</button>
+    <div id="cookieAanpassenDiv">
+        <p>De functies die de onclick afhandelt en de dom aanpast:</p>
+        <script src="https://pastebin.com/embed_js/34VeHSJr"></script>
+
+        <p>Die functie die cookiewaardes aanmaakt.</p>
+        <script src="https://pastebin.com/embed_js/D8mjgtGe"></script>
+    </div>
+
+</div>
+
+<div class="cookieBottom">
+    <div class="cookieBottoms" id="cookie1">
+        <p>De waarde van cookie (cTeller):</p>
+        <p id="c1Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie2">
+        <p>De waarde van cookie (cNieuw):</p>
+        <p id="c2Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie3">
+        <p>De waarde van cookie (cAanpassen):</p>
+        <p id="c3Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie4">
+        <p>De waarde van cookie (cDelete):</p>
+        <p id="c4Value"></p>
+    </div>
+</div>
+
+<script src="cookie.js"></script>
+
+</body>
+</html>

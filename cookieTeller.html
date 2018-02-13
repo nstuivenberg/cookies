@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies en voorbeelden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="pageLoad()">
+<div class="top">
+    <div class="topleft"></div>
+    <div class="topcenter">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="watte.html"><li>Wat is een cookie?</li></a>
+            <a href="cookieToevoegen.html"><li>Cookie toevoegen</li></a>
+            <a href="cookieAanpassen.html"><li>Cookie aanpassen</li></a>
+            <a href="cookieVerwijderen.html"><li>Cookie verwijderen</li></a>
+            <a href="cookieTeller.html"><li>Cookie Teller</li></a>
+        </ul>
+    </div>
+    <div class="topright">
+        <img src="https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1503483467">
+    </div>
+</div>
+
+<div class="main">
+    <h1>De cookie teller</h1>
+    <p>Stel je wilt een gebruiker tonen hoe vaak hij op een pagina is geweest. Dat zou je in een database kunnen
+    opslaan, maar dat kun je ook bijhoudels middels het gebruik van een cookie.</p>
+
+    <p>Waar moet je aan denken als je zo'n stukje functionaliteit wilt programmeren?</p>
+
+    <button id="cookieTellerButton" onclick="cookieTellerUitleg()">Bekijk stappenplan</button>
+
+    <div id="cookieTellerDiv">
+        <ul>
+            <li>Als de pagina geladen wordt: Je moet checken of de bezoeker al de cookie heeft</li>
+            <ul>
+                <li>
+                    Als je de gebruiker de cookie niet heeft:
+                    <ul>
+                        <li> maak deze aan en geef deze de waarde: 1 & datatype string. (cookie toevoegen).</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Als de gebruiker al wel de cookie heeft:
+                    <ul>
+                        <li>Lees de waarde van de cookie uit.</li>
+                        <li>Zet de waarde om naar een Integer.</li>
+                        <li>Tel er één bij op.</li>
+                        <li>Maak er weer een String van.</li>
+                        <li>Sluit de nieuwe waarde op (cookie aanpassen).</li>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+        <p>Daarnaast kun je deze code bekijken. Daar zit de teller namelijk ook al in.</p>
+    </div>
+
+</div>
+
+<div class="cookieBottom">
+    <div class="cookieBottoms" id="cookie1">
+        <p>De waarde van cookie (cTeller):</p>
+        <p id="c1Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie2">
+        <p>De waarde van cookie (cNieuw):</p>
+        <p id="c2Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie3">
+        <p>De waarde van cookie (cAanpassen):</p>
+        <p id="c3Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie4">
+        <p>De waarde van cookie (cDelete):</p>
+        <p id="c4Value"></p>
+    </div>
+</div>
+
+<script src="cookie.js"></script>
+
+</body>
+</html>

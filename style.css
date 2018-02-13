@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2) format("woff2"), url(http://www.rocmn.n/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-bolditalic-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-bolditalic-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-regular-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-regular-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-regularitalic-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-regularitalic-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-light-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-light-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-lightitalic-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-lightitalic-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-thin-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-thin-webfont.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Text';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-thinitalic-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/brandontext-thinitalic-webfont.woff) format("woff");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Filson Soft';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-bold-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-bold-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Filson Soft';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-medium-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-medium-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Filson Soft';
+    src: url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-book-webfont.woff2) format("woff2"), url(http://www.rocmn.nl/themes/custom/rocmn_assets/fonts/brandontext-bold-webfont.woff2/themes/custom/rocmn_assets/fonts/filsonsoft-book-webfont.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: "Filson Soft",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    min-height: 98vh;
+    justify-content: flex-start;
+    justify-content: space-around;
+}
+
+.top {
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+    border-bottom: 3px #2E3192 solid;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.topleft {
+    width:10%;
+}
+.topcenter {
+    width:70%;
+    vertical-align: middle;
+}
+.topright {
+    width:18%;
+}
+
+.top .topcenter ul li {
+    display: inline-block;
+    border:1px solid #2E3192;
+    padding: 4px;
+    background-color: #2E3192;
+    color:#fff;
+    height:20px;
+    line-height: 20px;
+}
+
+h1, h2 {
+    color: #2E3192;
+}
+
+.main {
+    flex-grow:10;
+}
+
+.cookieBottom {
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 1vh;
+    background-color:#2E3192;
+    color:#fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cookieBottom .cookieBottoms {
+    border:1px solid #2E3192;
+    padding:2px;
+}
+
+#addCookieAnswer {
+    display:none;
+}
+
+#movie {
+    display:none;
+}
+
+#cookieAanpassenButton, #cookieVerwijderenButtonOne, #cookieTellerButton {
+    display:block;
+}
+
+#cookieAanpassenDiv, #cookieVerwijderenDivOne, #cookieTellerDiv {
+    display:none;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.attention {
+    font-weight:bolder;
+}
+button, iframe {
+    margin-top:10px;
+}
+
+
+

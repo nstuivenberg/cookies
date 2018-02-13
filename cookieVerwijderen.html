@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies en voorbeelden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="pageLoad()">
+<div class="top">
+    <div class="topleft"></div>
+    <div class="topcenter">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="watte.html"><li>Wat is een cookie?</li></a>
+            <a href="cookieToevoegen.html"><li>Cookie toevoegen</li></a>
+            <a href="cookieAanpassen.html"><li>Cookie aanpassen</li></a>
+            <a href="cookieVerwijderen.html"><li>Cookie verwijderen</li></a>
+            <a href="cookieTeller.html"><li>Cookie Teller</li></a>
+        </ul>
+    </div>
+    <div class="topright">
+        <img src="https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1503483467">
+    </div>
+</div>
+
+<div class="main">
+    <h1>Cookie verwijderen</h1>
+    <p>Net zoals bij het aanpassen van de cookie, is er geen methode om de cookie <span class="cursive">direct</span>
+     te verwijderen. De browser verwijdert de cookie echter automatisch als deze verlopen is. Waar we dus voor moeten
+    zorgen is dat we de cookie aanpassen naar een datum die in het verleden ligt.</p>
+
+    <p>Bij cookie aanpassen hebben we al geleerd, dat we de setCookie functie kunnen gebruiken om de cookie aan te
+    passen, deze zouden we in dit geval ook weer kunnen gebruiken. In plaats van dat we de derde parameter (voor het
+    aantal dagen) een positief getal geven, geven we deze een negatief geval.</p>
+
+    <button onclick="cookieDeleteAanmaken()">"I live"</button>
+    <button onclick="cookieDeleteDelete()">Delete cDelete</button>
+
+    <button id="cookieVerwijderenButtonOne" onclick="cookieDeleteShowCodeOne()">Laat me de code zien</button>
+    <div id="cookieVerwijderenDivOne">
+        <p>Hieronder roepen we weer de setCookie() functie aan. Dit maal specifieren we de
+        <span class="cursive">naam</span>, laten we de waarde <span class="attention">leeg</span> en zetten we de
+        dag integer op een negatief getal: -1</p>
+        <script src="https://pastebin.com/embed_js/gUN1enNy"></script>
+    </div>
+
+    <p>Zo zie je dat je met één functie drie dingen kunt doen: Een cookie aanmaken, aanpassen en verwijderen. Je hebt
+        daarnaast één functie nodig om de cookie te kunnen uitlezen. Je hebt nu alle basisfuncties van cookies gezien.
+    Probeer zelf een cookie teller te maken.</p>
+
+
+
+</div>
+
+<div class="cookieBottom">
+    <div class="cookieBottoms" id="cookie1">
+        <p>De waarde van cookie (cTeller):</p>
+        <p id="c1Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie2">
+        <p>De waarde van cookie (cNieuw):</p>
+        <p id="c2Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie3">
+        <p>De waarde van cookie (cAanpassen):</p>
+        <p id="c3Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie4">
+        <p>De waarde van cookie (cDelete):</p>
+        <p id="c4Value"></p>
+    </div>
+</div>
+
+<script src="cookie.js"></script>
+
+</body>
+</html>

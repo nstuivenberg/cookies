@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies en voorbeelden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="pageLoad()">
+<div class="top">
+    <div class="topleft"></div>
+    <div class="topcenter">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="watte.html"><li>Wat is een cookie?</li></a>
+            <a href="cookieToevoegen.html"><li>Cookie toevoegen</li></a>
+            <a href="cookieAanpassen.html"><li>Cookie aanpassen</li></a>
+            <a href="cookieVerwijderen.html"><li>Cookie verwijderen</li></a>
+            <a href="cookieTeller.html"><li>Cookie Teller</li></a>
+        </ul>
+    </div>
+    <div class="topright">
+        <img src="https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1503483467">
+    </div>
+</div>
+
+<div class="main">
+    <h1>Cookie toevoegen</h1>
+    <p>Om een cookie toe te voegen aan de browser van de eindgebruiker, dien je de volgende drie punten te specifiëren:</p>
+    <ol>
+        <li>Naam van de cookie en de waarde</li>
+        <li>Wanneer de cookie verloopt</li>
+        <li>De path. Welke websites kunnen de cookies lezen?</li>
+    </ol>
+    <p>Punt 2 en 3 zijn niet verplicht om te gebruiken, maar ik wil je adviseren om dat wel aan te leren.
+        Hieronder volgt een code voorbeeld. We maken een cookie aan, deze heet <span class="cursive">youtubeId</span>.
+        We geven deze de waarde <span class="cursive">dQw4w9WgXcQ</span>. De cookie verloopt
+        <span class="cursive">1 januari 2020</span> en hij is alleen op dit domein te gebruiken.
+    </p>
+    <script src="https://pastebin.com/embed_js/0Xx48dYA"></script>
+
+    <p onclick="lala()"><span class="attention">Klik hier om alle cookies te laten zien die bij deze website horen.
+    </span></p>
+    <p id="docCookie"></p>
+    <script src="https://pastebin.com/embed_js/QxadMNb1"></script>
+
+    <p>Je ziet hier als het goed is minimaal drie cookies. Deze worden gescheiden door een ;. Je kunt van de cookies
+        niet de datum opvragen en ook niet de path bekijken. Je krijgt alleen de naam en de waarde van de cookie.</p>
+
+    <h2>In een functie</h2>
+    <p>Het is ook mogelijk om het maken van een cookie te laten afhandelen door een functie. Dit wil ik jullie ook
+    aanraden om te leren en te gebruiken. Dit zorgt voor herbruikbare code. Hieronder volgt een functie die drie
+        parameters ontvangt. Cookienaam, de waarde en de expirationdate.</p>
+    <script src="https://pastebin.com/embed_js/D8mjgtGe"></script>
+
+    <p>Hieronder wordt de code regel bij regel uitgelegd</p>
+    <ol>
+        <li>
+            Hier wordt de functie en de functienaam gedefinieerd. De functie krijgt drie variabelen mee.
+        </li>
+        <li>
+            Hier wordt een nieuwe variabele aangemaakt. Die krijgt de waarde van new Date().
+        </li>
+        <li>
+            Hier passen we de datum aan naar de huidige datum plus het aantal ingegeven dagen.
+        </li>
+        <li>
+            We maken hier een nieuwe variabele aan om de expiredate goed in de cookie te zetten.
+        </li>
+        <li>
+            Hier maken we de cookie aan.
+        </li>
+    </ol>
+
+    <p>Als je bovenstaande functie in je code hebt staan, hoef je alleen maar de functie aan te roepen en deze drie
+    parameters mee te geven. Dan wordt er een cookie voor je gemaakt. Probeer maar eens deze drie cookies aan te maken</p>
+    <ul>
+        <li>Cookienaam: cNieuw waarde: Leipe dinges ouwe, dagen: 4</li>
+        <li>Cookienaam: voornaam, waarde: Vladimir, dagen 22</li>
+        <li>Cookienaam: kleur, waarde: groen, dagen 1</li>
+    </ul>
+    <p id="ok" onclick="showAnswerAddCookie()">Klik hier voor de code.</p>
+    <div id="addCookieAnswer">
+        <script src="https://pastebin.com/embed_js/1FYm2S8N"></script>
+    </div>
+    <h2>Cookiewaarde uitlezen</h2>
+    <p>We hebben nu verschillende cookies met waardes opgeslagen. We gaan nu de cookie die de naam youtubeId heeft,
+    uitlezen en vervolgens laten we het youtube filmpje zien. Net zoals bij het opslaan bij de cookie, hebben we een
+    algemene functie geschreven die ervoor zorgt dat we, op basis van de naam, de waarde van een cookie kunnen opvragen.
+    </p>
+    <script src="https://pastebin.com/embed_js/G63WisDX"></script>
+    <p>Dit is de code regel voor regel uitgelegd:</p>
+    <ol>
+        <li>Declareer een functie met de naam getCookie. Deze functie accepteert 1 parameter. Die parameter heet cname.</li>
+        <li>Declareer een variabele. Deze heet name en heeft de waarde van cname + =.</li>
+        <li>Declareer een variabele. Deze heet decodedCookie en heeft de waarde van de uitkomst van de methode
+            <a href="https://www.w3schools.com/jsref/jsref_decodeuricomponent.asp">decodeUri</a>.
+            De data die we daarin gooien zijn alle cookies die bij deze website horen (document.cookie).</li>
+        <li>Declareer een variabele en noem deze ca. Deze heeft de waarde van de split (';') op decodedCookie</li>
+        <ul>
+            <li><span class="attention">Extra uitleg:</span>
+                Eerder hebben we gezien dat document.cookie een string teruggeeft.
+                Elke cookie daarin krijgt een scheidingsteken, de ;.</li>
+            <li>Met de <a href="https://www.w3schools.com/jsref/jsref_split.asp">split methode </a> geeft een array
+                terug.</li>
+            <li>Deze array heeft een string als input (decodedCookie) en wordt gescheiden op de ;</li>
+            <li>TLDR: ca is een array en bevat alle cookies.</li>
+        </ul>
+        <li>
+            We maken een for-lus om de array door de lopen.
+        </li>
+        <li>
+            Declareer variabele met de naam c. Deze heeft de waarde van de array[teller].
+        </li>
+        <li>
+            While-lus: Zolang de eerste letter (charAt) gelijk is aan een spatie. Hier kun je op checken, omdat cookies altijd op deze manier worden opgebouwd.
+        </li>
+        <li>
+            De waarde van c krijgt de waarde van de huidige c vanaf positie 1, door het gebruik van
+            <a href="https://www.w3schools.com/jsref/jsref_substring.asp">substring</a>. In andere woorden: de spatie
+            op positie 0 wordt weggehaald.
+        </li>
+        <li>
+            While-lus sluiten met een accolade
+        </li>
+        <li>
+            Als de uitkomst van de methode van <a href="https://www.w3schools.com/jsref/jsref_indexof.asp">indexOf</a>,
+            gelijk is aan 0:
+            <ul>
+                <li>De indexOf() geeft de positie weer waar de gegeven waarde als eerste voorkomt</li>
+                <li>Komt de waarde niet voor, dan wordt er -1 geretourneerd.</li>
+                <li>Dus als de waarde van de variabele cname aan het begin van de string voorkomt, dan is deze if true</li>
+            </ul>
+        </li>
+        <li>
+            Retourneer het volgende: De <a href="https://www.w3schools.com/jsref/jsref_substring.asp">substring</a> van
+            de waarde van variabele c van positie <span class="cursive">de lengte van de variabele name</span> tot
+            positie <span class="cursive">de lengte van de waarde van variabele c</span>
+        </li>
+        <li>Accolade if sluiten</li>
+        <li>Accolade for sluiten</li>
+        <li>Return een lege string. Dit stukje code wordt alleen gelopen als de andere return niet wordt gelopen</li>
+        <li>Accolade function sluiten</li>
+    </ol>
+
+    <p>Om dan de waarde van de cookie met de naam youtubeId te krijgen, dienen we bovenstaande funtie aan te roepen en
+    deze de parameter "youtubeId" mee te geven.</p>
+    <script src="https://pastebin.com/embed_js/H7nthke9"></script>
+    <button id="movieButton" onclick="buildYoutubeVid()">Show me the movie</button>
+    <div id="movie">
+
+    </div>
+
+    <h2>Tot slot</h2>
+    <p>Deze pagina heeft je laten zien hoe je een cookie kunt toevoegen en hoe je een cookie kunt uitlezen. De volgende
+    pagina laat je zien hoe je een cookie kunt aanpassen. Hieronder staat de code die het youtube-frame opbouwt.</p>
+
+    <script src="https://pastebin.com/embed_js/pv3nYsMz"></script>
+
+</div>
+
+<div class="cookieBottom">
+    <div class="cookieBottoms" id="cookie1">
+        <p>De waarde van cookie (cTeller):</p>
+        <p id="c1Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie2">
+        <p>De waarde van cookie (cNieuw):</p>
+        <p id="c2Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie3">
+        <p>De waarde van cookie (cAanpassen):</p>
+        <p id="c3Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie4">
+        <p>De waarde van cookie (cDelete):</p>
+        <p id="c4Value"></p>
+    </div>
+</div>
+
+<script src="cookie.js"></script>
+
+</body>
+</html>

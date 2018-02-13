@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies en voorbeelden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="pageLoad()">
+<div class="top">
+    <div class="topleft"></div>
+    <div class="topcenter">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="watte.html"><li>Wat is een cookie?</li></a>
+            <a href="cookieToevoegen.html"><li>Cookie toevoegen</li></a>
+            <a href="cookieAanpassen.html"><li>Cookie aanpassen</li></a>
+            <a href="cookieVerwijderen.html"><li>Cookie verwijderen</li></a>
+            <a href="cookieTeller.html"><li>Cookie Teller</li></a>
+        </ul>
+    </div>
+    <div class="topright">
+        <img src="https://www.rocmn.nl/themes/custom/rocmn/logo.svg?v=1503483467">
+    </div>
+</div>
+
+<div class="main">
+    <h1>Wat is een cookie?</h1>
+    <p>Een cookie is een klein tekstbestand (=String) waarin de website stukjes data kan opslaan. Deze data kan in
+        principe alleen uitgelezen worden door de website die de cookie plaatst. Websites gebruiken cookies om
+        bijvoorbeeld adresgegevens (thuisbezorgd.nl), je naam (bol.com) of je taalinstellingen te onthouden.
+    </p>
+
+    <h2>Legal info</h2>
+    <p>Het plaatsen van een cookie is niet altijd verboden. Je dient je als applicatieontwikkelaar wel aan deze regels
+    te houden:</p>
+    <ul>
+        <li>
+            De website moet om toestemming vragen voor het plaatsen van een cookie.
+        </li>
+        <li>
+            De website moet u ook informatie geven over deze cookie. Bijvoorbeeld waarvoor de cookie wordt gebruikt.
+            En of ook andere websites of bedrijven toegang hebben tot de gegevens die met de cookie worden verzameld.
+        </li>
+    </ul>
+
+    <p>Er zijn echter ook cookies die zonder toestemming geplaatst mogen worden:</p>
+    <ul>
+        <li>
+            Als de cookie noodzakelijk is voor de werking van de website. Of noodzakelijk is voor een dienst die u zelf
+            hebt aangevraagd. Dat kan bijvoorbeeld een cookie zijn die helpt bij het inloggen voor internetbankieren.
+        </li>
+        <li>
+            Als de cookie wordt gebruikt om de kwaliteit of effectiviteit van de website te bekijken.
+            Bijvoorbeeld een cookie die wordt gebruikt om te zien hoe een bezoeker door de website surft.
+            Deze informatie kan de website-eigenaar gebruiken om zijn website te verbeteren.
+            Dat mag alleen als de cookie geen grote inbreuk maakt op uw privacy.
+            De website-eigenaar mag deze gegevens dan niet gebruiken om bijvoorbeeld een profiel van uw internetgebruik
+            op te stellen. En hij mag deze informatie niet zomaar delen met andere bedrijven.
+        </li>
+    </ul>
+</div>
+
+<div class="cookieBottom">
+    <div class="cookieBottoms" id="cookie1">
+        <p>De waarde van cookie (cTeller):</p>
+        <p id="c1Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie2">
+        <p>De waarde van cookie (cNieuw):</p>
+        <p id="c2Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie3">
+        <p>De waarde van cookie (cAanpassen):</p>
+        <p id="c3Value"></p>
+    </div>
+    <div class="cookieBottoms" id="cookie4">
+        <p>De waarde van cookie (cDelete):</p>
+        <p id="c4Value"></p>
+    </div>
+</div>
+
+<script src="cookie.js"></script>
+
+</body>
+</html>
